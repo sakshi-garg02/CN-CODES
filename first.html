@@ -1,0 +1,49 @@
+<!-- HTML --> 
+ 
+<!-- 1.	Write a HTML program to design a form which should allow to enter your personal data.
+(Hint: make use of text field, password field, e-mail, lists, radio buttons, checkboxes, submit button). -->
+
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+	<form>
+		<table width="80%" align="center" border="2">
+			<tr>
+				<th colspan="2">Addmision Form</th>
+			</tr>
+			<tr>
+				<td>Select Your Gender</td>
+				<td><input type="radio" checked name="Gender" value="Male"> Male <input type="radio" name="Gender" value="Female"> Female</td>
+			</tr>
+			<tr>
+				<td>Full Name: </td>
+				<td><input type="text" placeholder="Enter your Full name" required></td>
+			</tr>
+			<td>Select Course</td>
+			<td><select>
+				<option value="0">--Select Course--</option>
+				<option value="DCA">Math</option>
+				<option value="ADCA">Eng</option>
+				<option value="DTP">Hindi</option>
+				<option value="TALLY">TALLY</option>
+				<option value="DISM">Sci</option>
+			</select></td>
+			<tr>
+				<td>Qualifications</td>
+			<td><input type="checkbox" name="qly"> 10<sup>th</sup> <input type="checkbox" name="qly"> 12<sup>th</sup> <input type="checkbox" name="qly"> ITI <input type="checkbox" name="qly"> Diploma</td>
+			</tr>
+			<td>Enter Your Email</td>
+			<td><input type="email" name="email" placeholder="e.g. xyz@gmail.com"></td>
+			<tr>
+				<td>Create New Password</td>
+				<td><input type="Password" ></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="Submit" value="Submit"> <input type="Reset" value="Reset"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
